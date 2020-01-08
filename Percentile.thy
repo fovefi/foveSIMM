@@ -478,7 +478,7 @@ proof -
   then have d: "c * percentile ys x = linear_interpolation (equidistant_points_on_unit_interval_of (map (\<lambda> z. c*z) (sort ys))) x"
     using assms equidistant_linear d assms(4) c sorted_sort_id by fastforce
   then show ?thesis using percentile_def b c
-    by (simp add: b \<open>sort (map (( * ) c) ys) = map (( * ) c) (sort ys)\<close>)
+    by (simp add: b \<open>sort (map ((*) c) ys) = map ((*) c) (sort ys)\<close>)
 qed
 
 text \<open> The percentile function is Lipschitz continuous. \<close>

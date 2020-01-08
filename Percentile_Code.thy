@@ -534,5 +534,5 @@ theorem percentile_java_equiv:
   shows "Percentile.percentile values level = percentile_impl values level"
   using assms less_eq_real_def percentile_java_equiv_except_left percentile_java_equiv_left by blast
                                       
-export_code percentile_impl in Scala file "foveSIMM_scala_src/percentile_impl.scala"
+export_code percentile_impl in Scala
 end

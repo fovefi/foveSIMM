@@ -258,5 +258,4 @@ text \<open> The following code exports the functions and defined constants to s
 export_code percentile_impl asset_risk fx_matrix fx_rate_shocks 
             portfolio_derivatives risk_factors risk_factor_shocks
             in Scala module_name foveSIMM 
-            file "foveSIMM_scala_src/foveSIMM_without_main.scala"
 end

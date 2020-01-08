@@ -180,7 +180,7 @@ record portfolio_variation_margin =
 definition portfolio_variation_margins :: "portfolio_variation_margin list"
   where "portfolio_variation_margins =
      [
-       \<lparr> name =''GBP'',            amount = 150000, currency = USD \<rparr>
+       \<lparr> name =''GBP'',            amount = 150000, currency = USD \<rparr> 
      ]"
 
 (* risk-factor-base-levels from risk-factor-base-levels.csv 
@@ -254,4 +254,6 @@ definition risk_factor_shocks :: "risk_factor_shock list"
 
 (* The risk level, i.e., the var level, in the example is 0.9. *)
 definition "var_level = 0.9"
+
+value "simulated_profit_loss ''GBP''"
 end
