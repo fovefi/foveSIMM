@@ -1,0 +1,37 @@
+This directory contains the description of foveSIMM, a formally
+verified Standard Initial Margin Model (SIMM). In detail, you find
+
+- foveSIMM.pdf a description of foveSIMM.
+
+- Five Isabelle-2019 theory files with the formalization:
+
+  * Linear_Interpolation.thy: Theory files to define the interpolation
+    of two given points (x1,y1) and (x2,y2) as a linear function
+    f(x) = a*(x-b) + c.
+
+  * Percentile.thy: The percentile function is defined as a linear
+    approximation between points defined for a partial function
+    defined for finitely many elements.
+
+  * Percentile_Code.thy: An executable definition of the percentile
+    function.
+
+  * foveSIMM_Values.thy: An Isabelle representation of the values
+    provided in the openSIMM example.
+
+  * foveSIMM: A reconstruction of the openSIMM example in Isabelle/HOL
+    with an extraction of corresponding Scala code.
+
+- Three sub-directories with the experiments done with the
+  Isabelle/HOL code, each containing the five theory files mentioned above:
+
+  * extension-experiment: Extension of the Percentile function to the
+    full unit interval by taking the neighbouring slope.
+
+  * extension-experiment-max: Extension of the Percentile function to
+    the full unit interval by taking the steepest slope.
+
+  * shift-experiment: Redefining the Percentile function by shifting
+    it along the x-axis.
+
+
